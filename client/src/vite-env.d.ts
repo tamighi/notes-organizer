@@ -1,4 +1,5 @@
-import router from "./router";
+/// <reference types="vite/client" />
+import type { router } from "./router";
 
 declare module "@tanstack/react-router" {
   interface Register {

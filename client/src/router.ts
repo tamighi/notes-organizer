@@ -23,11 +23,9 @@ const indexRoute = createRoute({
 
 const routeTree = rootRoute.addChildren([manuscriptProcessorRoute, indexRoute]);
 
-const router = createRouter({
+export const router = createRouter({
   routeTree,
   defaultPreload: "intent",
   scrollRestoration: true,
   basepath: "/writings-organizer",
 });
-
-export default router;
