@@ -1,9 +1,15 @@
 class ManuscriptService {
   public async manuscriptToTranscript(file: File) {
-    return file.name;
-    const res = await fetch("https://google.com", { method: "get" });
+    // TODO: env vars
+    const formData = new FormData();
+    formData.append(file.name, await file.text());
 
-    return res.json();
+    const res = await fetch("http://localhost:3000/manuscript/transcript", {
+      method: "post",
+      body: formData,
+    });
+
+    return res.text();
   }
 }
 
