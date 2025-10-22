@@ -1,9 +1,9 @@
 import { Controller, Post } from "@nestjs/common";
-import { OpenAIService } from "src/openAI/openAI.service";
+import { AIClient } from "src/AIClient/AIClient.service";
 
 @Controller("manuscript")
 export class ManuscriptController {
-  constructor(private openAIService: OpenAIService) {}
+  constructor(private openAIService: AIClient) {}
 
   @Post("transcript")
   public async toTranscript() {

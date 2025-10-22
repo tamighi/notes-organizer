@@ -1,10 +1,10 @@
 import { Module } from "@nestjs/common";
 import { ManuscriptController } from "./manuscript.controller";
 import { ManuscriptService } from "./manuscript.service";
-import { OpenAIService } from "src/openAI/openAI.service";
+import { AIClient } from "src/AIClient/AIClient.service";
 
 @Module({
   controllers: [ManuscriptController],
-  providers: [ManuscriptService, OpenAIService],
+  providers: [ManuscriptService, AIClient],
 })
 export class ManuscriptModule {}

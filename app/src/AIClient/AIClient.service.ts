@@ -7,7 +7,7 @@ export type SendParams = {
 };
 
 @Injectable()
-export class OpenAIService {
+export class AIClient {
   private readonly MODEL = "gpt-4o";
   private client: OpenAI = new OpenAI();
 
