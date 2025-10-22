@@ -6,7 +6,6 @@ const App = () => {
     <div className="flex">
       <Sidebar />
       <div>
-        <h1>Hello world</h1>
         <Outlet />
       </div>
     </div>
