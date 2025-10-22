@@ -1,6 +1,5 @@
 class ManuscriptService {
   public async manuscriptToTranscript(file: File) {
-    // TODO: env vars
     const formData = new FormData();
     formData.append(file.name, await file.text());
 
