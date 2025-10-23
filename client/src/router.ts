@@ -27,5 +27,5 @@ export const router = createRouter({
   routeTree,
   defaultPreload: "intent",
   scrollRestoration: true,
-  basepath: "/writings-organizer",
+  basepath: "/notes-organizer",
 });

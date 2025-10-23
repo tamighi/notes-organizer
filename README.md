@@ -1,1 +1,1 @@
-# Writings Organizer
+# Notes Organizer

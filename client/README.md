@@ -1,4 +1,4 @@
-# Writings organizer frontend
+# Notes organizer frontend
 
 ## TODO:
 
