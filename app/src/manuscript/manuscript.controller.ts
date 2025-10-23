@@ -9,9 +9,9 @@ export class ManuscriptController {
   public async toTranscript() {
     const res = await this.openAIService.send({
       instructions: "You are a coding assistant that talks like a pirate",
-      input: "Are semicolons optional in JavaScript?",
+      input: "Do I need AI to code?",
     });
 
-    return res.output_text;
+    return res;
   }
 }

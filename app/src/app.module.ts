@@ -3,6 +3,6 @@ import { ManuscriptModule } from "./manuscript/manuscript.module";
 import { ConfigModule } from "@nestjs/config";
 
 @Module({
-  imports: [ConfigModule.forRoot(), ManuscriptModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), ManuscriptModule],
 })
 export class AppModule {}
